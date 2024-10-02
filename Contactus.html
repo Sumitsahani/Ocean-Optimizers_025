@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Correct Font Awesome CDN for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgb(183, 103, 233);
+            margin: 0;
+            padding: 20px;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #b5606f;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: calc(30% - 20px);
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .card img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color:black;
+        }
+
+        .card .contact-icons {
+            margin: 10px 0;
+        }
+
+        .card .contact-icons a {
+            color:black;
+            font-size: 18px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .card .contact-icons a:hover {
+            color: #333;
+        }
+
+        .card .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .card .social-icons a {
+            color:black;
+            font-size: 18px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .card .social-icons a:hover {
+            color: #333;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 10px 10px 20px rgba(2, 0, 0, 0.2);
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Contact Us</h1>
+    <div class="contact-container">
+        <!-- Himanshu Ladekar's card -->
+        <div class="card">
+            <img src="./him.jpg" alt="Himanshu Ladekar">
+            <h3>Himanshu Ladekar</h3>
+            <div class="contact-icons">
+                <a href="mailto:Himanshu@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919134567890"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/himanshuladekar" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/himanshuladekar" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="./sumit.jpeg" alt="Sumit">
+            <h3>Sumit sahani</h3>
+            <div class="contact-icons">
+                <a href="mailto:Abhishek@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919134567891"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="social-icons">
+                <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Sumitsahani" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="./Ashita.png" alt="Ashita">
+            <h3>Ashita Shau</h3>
+            <div class="contact-icons">
+                <a href="mailto:Gourav@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919134567892"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/gouravchoudhary" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/gouravchoudhary" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="./rohan.PNG" alt="Rohan">
+            <h3>Rohan Singh</h3>
+            <div class="contact-icons">
+                <a href="mailto:Abhishek1@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919134567893"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/abhishekrewatkar" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/abhishekrewatkar" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="./Bharat.jpeg" alt="Bharat">
+            <h3>Bharat Kumar</h3>
+            <div class="contact-icons">
+                <a href="mailto:Ashwini@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919134567894"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ashwinipatil" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ashwinipatil" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
