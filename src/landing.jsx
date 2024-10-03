@@ -137,17 +137,9 @@ const TrackMyBillLanding = () => {
                   Simplify Your Finances
                 </span>
               </motion.h1>
-              <motion.p 
-                className="mx-auto max-w-[700px] text-gray-600 md:text-xl dark:text-gray-400"
-                variants={fadeInUp}
-              >
-                Effortlessly track invoices and expenses. Take control of your financial future with TrackMyBill's powerful and intuitive platform.
-              </motion.p>
-              <motion.div className="space-x-4" variants={fadeInUp}>
-                <Button className="bg-green-600 hover:bg-green-700 text-white">Get Started</Button>
-                <Button variant="outline">Watch Demo</Button>
-              </motion.div>
-            </motion.div>
+              
+
+            {/* hdbwqdhwqdj[p wkd[] wd] */}
           </div>
         </section>
 
