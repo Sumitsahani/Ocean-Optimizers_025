@@ -3,6 +3,7 @@ import { useState } from "react";
 import { auth, db } from "./firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
+import "./css/login.css";
 
 export const Register = () => {
   const [email, setEmail] = useState("");
@@ -28,6 +29,8 @@ export const Register = () => {
       toast.success("User Registered Successfully",{
         position:"top-center",
       })
+
+      
     } catch (error) {
       console.log(error.message);
       toast.error(error.message,{
@@ -36,11 +39,20 @@ export const Register = () => {
     }
   };
 
+  const handleClick=(e)=>{
+    e.preventDefault()
+
+    window.location.href="/login"
+  }
+
   return (
+    <section className="container forms">
+            <div className="form login">
+              <div className="form-content">
+                 <header>Sign Up</header>
     <form onSubmit={handleRegister}>
-      <h1>Sign up</h1>
-      <div className="form-group">
-        <label htmlFor="fname">First name</label>
+      
+      <div className="field input-field">
         <input
           type="text"
           className="form-control"
@@ -48,8 +60,7 @@ export const Register = () => {
           onChange={(e) => setFname(e.target.value)}
         />
       </div>
-      <div className="form-group">
-        <label htmlFor="lname">Last name</label>
+      <div className="field input-field">
         <input
           type="text"
           className="form-control"
@@ -57,8 +68,7 @@ export const Register = () => {
           onChange={(e) => setLname(e.target.value)}
         />
       </div>
-      <div className="form-group">
-        <label htmlFor="email">Email</label>
+      <div className="field input-field">
         <input
           type="email"
           className="form-control"
@@ -66,8 +76,7 @@ export const Register = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
-      <div className="form-group">
-        <label htmlFor="password">Password</label>
+      <div className="field input-field">
         <input
           type="password"
           className="form-control"
@@ -75,7 +84,26 @@ export const Register = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <button type="submit">Submit</button>
+      <div className="field button-field">
+        <button type="submit">Sign up</button>
+
+      </div>
+
+
+      <div className="form-link">
+                <span>
+                  Already Registered?
+                 
+                  <a href="#" className="login-link" onClick={handleClick}>
+                    Login
+                  </a>
+                </span>
+              </div>
     </form>
+    </div>
+    </div>
+    </section>
   );
 };
+
+
