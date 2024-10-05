@@ -1,8 +1,11 @@
-# React + Vite
+# HooBank
+### Modern UI/UX website using React.js & Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Deployed in https://tailwind-landing-page-one.vercel.app/
 
-Currently, two official plugins are available:
+![image](https://user-images.githubusercontent.com/116620586/232193361-4756f120-654b-4475-a660-aedda8f68037.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+## Features: 
+- Responsive across web, ipad and mobile 
