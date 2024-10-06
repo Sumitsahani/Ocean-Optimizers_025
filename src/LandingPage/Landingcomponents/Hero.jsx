@@ -1,0 +1,52 @@
+import { discount, robot } from "../Landingassets";
+import styles from "../style";
+import GetStarted from "./GetStarted";
+
+const Hero = () => {
+  return (
+    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+        <div className="flex flex-row items-center py-[6px] px-4 bg-white rounded-[10px] mb-2">
+          <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
+          <p className={`${styles.paragraph} ml-2 text-black`}>
+            <span className="text-[#0066FF]">20%</span> Off For{" "}
+            <span className="text-[#0066FF]">First Month</span> on Premium Plans
+          </p>
+        </div>
+
+        <div className="flex flex-row justify-between items-center w-full">
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-black ss:leading-[100.8px] leading-[75px]">
+            Simplify <br className="sm:block hidden" />{" "}
+            <span className="text-[#0066FF]">Your Invoices</span>
+          </h1>
+          <div className="ss:flex hidden md:mr-4 mr-0">
+            {/* Add any additional elements here */}
+          </div>
+        </div>
+
+        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-black ss:leading-[100.8px] leading-[75px] w-full">
+          And Track Your Expenses.
+        </h1>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5 text-black`}>
+          Stay on top of your business finances with our easy-to-use invoice and expense tracker. Create, send, and manage invoices seamlessly, while keeping track of your expenses in real-time. Say goodbye to messy spreadsheets!
+        </p>
+      </div>
+
+      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
+        <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+
+        {/* Gradient layers */}
+        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
+        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
+        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+        {/* End of gradient layers */}
+      </div>
+
+      <div className={`ss:hidden ${styles.flexCenter}`}>
+        
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
