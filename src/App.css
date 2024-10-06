@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Faces */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v24/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMlhLzTs.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v24/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMhhLzTs.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v24/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMZhLw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Global Styles */
+:root {
+  --black-gradient: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%);
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Background Gradients */
+.bg-blue-gradient {
+  background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
+}
+
+.bg-black-gradient {
+  background: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101d 95.11%);
+}
+
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+/* Text Gradients */
+.text-gradient {
+  background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* App Wrapper */
+.app-wraper {
+  background-color: #fafafa;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+header {
+  min-height: 80px;
+}
+
+.nav-loading {
+  width: 80px;
+  position: relative;
+  left: 8px;
+}
+
+.nav-loading-right {
+  width: 64px;
+  height: 40px;
+  right: 0px;
+}
+
+/* Colors */
+.primary-self-text {
+  color: rgb(0, 102, 255) !important;
+}
+
+.primary-background-color {
+  background-color: rgb(0, 102, 255) !important;
+}
+
+.text-default-color {
+  color: #777;
+}
+
+.side-link.active {
+  color: rgb(0, 102, 255);
+  display: flex;
+  background-color: rgba(0, 102, 255, 0.1);
+  transition-delay: 0.2s;
+  transition: all 0.3 linear;
+}
+
+/* Skeleton Styles */
+.skeleton-input-radius {
+  border-radius: 0.75rem !important;
+}
+
+.skeleton-image {
+  width: 3.2rem !important;
+  height: 3.2rem !important;
+}
+
+/* Modal Styles */
+.modal-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.fixed-body-scroll {
+  /* position: fixed; */
+}
+
+/* Responsive Table */
+.responsiveTable {
+  width: 100%;
+}
+
+.responsiveTable td .tdBefore {
+  display: none;
+}
+
+@media screen and (max-width: 40em) {
+  .responsiveTable table,
+  .responsiveTable thead,
+  .responsiveTable tbody,
+  .responsiveTable th,
+  .responsiveTable td,
+  .responsiveTable tr {
+    display: block;
+  }
+
+  .responsiveTable thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    border-bottom: 2px solid #777;
+  }
+
+  .responsiveTable tbody tr {
+    padding: 0.25em;
+  }
+
+  .responsiveTable td.pivoted {
+    border: none !important;
+    position: relative;
+    padding-left: calc(50% + 10px) !important;
+    text-align: left !important;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
+
+  .responsiveTable td .tdBefore {
+    position: absolute;
+    display: block;
+    left: 1rem;
+    width: calc(50% - 20px);
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    text-align: left !important;
+    font-weight: 600;
+  }
+}
+
+/* Miscellaneous */
+br {
+  height: 0 !important;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+/* Animation */
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* Button and Heading Styles */
+button, h1, h2, h3, h4, h5, h6 {
+  color: #0066FF; /* Heading color */
+}
+
+button {
+  background-color: white; /* Button background */
+  color: black; /* Button text color */
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, #00BFFF 0%, #1E90FF 100%);
+}
+
+/* Form Styles */
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-input {
+  border: 1px solid #e2e8f0; /* Light gray border */
+  border-radius: 0.375rem; /* Rounded corners */
+}
+
+textarea {
+  min-height: 100px; /* Default height */
+  border: 1px solid #e2e8f0; /* Light gray border */
+  border-radius: 0.375rem; /* Rounded corners */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem; /* Space between label and input */
+}
+
+/* Misc Styles */
+.tag-color {
+  background: #0066FF !important;
+  color: white;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  background-color: white;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Utility Classes */
+.mr-3 {
+  margin-right: 0.75rem; /* Right margin */
+}
+.mt-4 {
+  margin-top: 1rem; /* Top margin */
+}
+
+/* Hover Effects */
+.hover\:underline:hover {
+  text-decoration: underline;
+}
+
+/* Visibility Classes */
+.hidden {
+  display: none !important;
+}
