@@ -19,6 +19,7 @@ Welcome to **TrackMyBill**! This project, developed by **Ocean-Optimizers_025**,
 - **Payment Gateway**: Seamless payments through **Razorpay**.
 - **Responsive Design**: Built with **Tailwind CSS**, optimized for all devices.
 - **Smooth Animations**: Integrated with **Framer Motion** for transitions.
+- **Chatbot Integration**: Get instant assistance with invoice management and payments.
 
 ## **Project Structure**
 
