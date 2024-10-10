@@ -95,7 +95,7 @@ This project was created by **Ocean-Optimizers_025**:
 - **Sumit Kumar Sahani** (Team Lead) 
 - **Ashita Shahu** 
 - **Rohan Singh** 
-- **Himanshu** 
+- **Himanshu Ladekar** 
 ---
 
 With **TrackMyBill**, managing your invoices and payments becomes easier and more efficient! 
