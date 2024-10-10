@@ -12,6 +12,7 @@ import {
 } from "../../store/invoiceSlice";
 // import NumericFormat from "react-number-format";
 import { NumericFormat } from 'react-number-format';
+import { sumTotalAmount } from "../../utils/match";
 
 function DashboardWidgets() {
   const clients = useSelector(getAllClientsSelector);

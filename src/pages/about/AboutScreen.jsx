@@ -5,7 +5,7 @@ function AboutScreen() {
   return (
     <div>
       <div className="p-4">
-        <div className="bg-white rounded-xl p-3 font-title">
+        <div className="bg-white rounded p-3 font-title">
           <PageTitle title="About Me" />
           <div className="mt-4 mb-5 flex flex-row items-center">
             <img

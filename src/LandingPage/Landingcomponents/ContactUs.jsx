@@ -117,13 +117,13 @@ const TeamPage = () => {
     return (
         <>
       
-        <div className="bg-white-100 px-64">
-        <Navbar/>
-            <h1 className="text-center text-[36px] font-poppins font-bold text-[#333] mb-10">
-                Meet Our Team
-            </h1>
-            <div className="flex justify-center overflow-x-auto">
-                <div className="flex flex-nowrap gap-10">
+      <div className=" bg-white-100 px-4 md:px-10 lg:px-64">
+            <div className="w-full bg-white-100 flex flex-col items-center ">
+                <Navbar />
+                <h1 className="text-center text-[24px] md:text-[36px] font-poppins font-bold text-[#333] mb-10">
+                    Meet Our Team
+                </h1>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
                     {teamMembers.map((member, index) => (
                         <TeamMemberCard
                             key={index}

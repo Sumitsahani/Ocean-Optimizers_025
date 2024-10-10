@@ -90,7 +90,7 @@ function QuickAddClient({ editForm }) {
   }, [clientForm, dispatch, validForm]);
 
   const imageUploadClasses = useMemo(() => {
-    const defaultStyle = "rounded-xl ";
+    const defaultStyle = "rounded ";
 
     if (!clientForm.image) {
       return defaultStyle + " border-dashed border-2 border-indigo-400 ";
@@ -120,7 +120,7 @@ function QuickAddClient({ editForm }) {
   }, [clientNewForm]);
 
   return (
-    <div className="bg-white rounded-xl p-4">
+    <div className="bg-white rounded p-4">
       <SectionTitle> Quick Add Client </SectionTitle>
       <div className="flex mt-2">
         {isInitLoading ? (

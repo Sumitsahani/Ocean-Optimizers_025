@@ -127,17 +127,17 @@ const handleLogout = () => {
 };
 
 
-  const handleExport = useCallback(() => {
-    if (showNavbar) {
-      toggleNavbar();
-    }
-    setEscapeOverflow(true);
-    setIsViewMode(true);
-    setIsExporting(true);
-    setTimeout(() => {
-      handlePrint();
-    }, 3000);
-  }, [handlePrint, setEscapeOverflow, showNavbar, toggleNavbar]);
+  // const handleExport = useCallback(() => {
+  //   if (showNavbar) {
+  //     toggleNavbar();
+  //   }
+  //   setEscapeOverflow(true);
+  //   setIsViewMode(true);
+  //   setIsExporting(true);
+  //   setTimeout(() => {
+  //     handlePrint();
+  //   }, 3000);
+  // }, [handlePrint, setEscapeOverflow, showNavbar, toggleNavbar]);
 
   const handleDownloadImg = useCallback(() => {
     if (showNavbar) {
@@ -641,6 +641,12 @@ const handleLogout = () => {
     }
   }, [dispatch, invoiceForm, isConfirm, navigate, params, statusData]);
 
+  const handleExport = useCallback(() => {
+    console.log("Preparing to export...");
+  
+    window.print()
+  }, [handlePrint]);
+
   return (
     <div>
       <nav className="bg-white-800 text-black p-4 flex justify-between items-center">
@@ -654,14 +660,14 @@ const handleLogout = () => {
         />
       </div>
 
- 
+      {/* User Info and Logout */}
       <div className="flex items-center space-x-4">
-   
-        <span className="text-black font-semibold text-lg">Welcome ,{username ? capitalizeUsername(username) : "Guest"}</span>
+        {/* Username */}
+        <span className="text-black font-semibold text-lg">Welcome, {capitalizeUsername(username)}</span>
 
-   
+        {/* Logout Button */}
         <button
-          className="bg-blue-500  text-white font-bold py-2 px-4 rounded"
+          className="bg-custom-blue  text-white font-bold py-2 px-4 rounded"
           onClick={handleBack}
         >
           Back
@@ -701,7 +707,7 @@ const handleLogout = () => {
           className={
             isExporting
               ? "bg-white mb-1 pt-1 px-1 "
-              : "bg-white mx-4 rounded-xl mb-1"
+              : "bg-white mx-4 rounded mb-1"
           }
           id="InvoiceWrapper"
           ref={componentRef}
@@ -711,8 +717,8 @@ const handleLogout = () => {
           <div
             className={
               isExporting
-                ? "py-5 px-8 bg-cover bg-center bg-slate-50 rounded-xl flex flex-row justify-between items-center"
-                : "py-9 px-8 bg-cover bg-center bg-slate-50 rounded-xl flex flex-col sm:flex-row justify-between items-center"
+                ? "py-5 px-8 bg-cover bg-center bg-slate-50 rounded flex flex-row justify-between items-center"
+                : "py-9 px-8 bg-cover bg-center bg-slate-50 rounded flex flex-col sm:flex-row justify-between items-center"
             }
             style={{
               backgroundImage: `url(${invoiceForm?.backgroundImage?.base64})`,
@@ -1431,7 +1437,7 @@ const handleLogout = () => {
 
       {invoiceForm && invoiceForm?.statusIndex !== "3" && (
         <div className="px-4 pt-3">
-          <div className="bg-white rounded-xl px-3 py-3">
+          <div className="bg-white rounded px-3 py-3">
             <div className="flex flex-col flex-wrap sm:flex-row ">
               
               
@@ -1473,18 +1479,7 @@ const handleLogout = () => {
         </div>
       )}
 
-      {invoiceForm && (
-        <div className="p-4">
-          <InvoiceTopBar
-            onClickBack={goInvoiceList}
-            viewMode={isViewMode}
-            onClickViewAs={toggleViewMode}
-            onClickSetting={openSettingModal}
-            onClickExport={handleExport}
-            onClickDownloadImg={handleDownloadImg}
-          />
-        </div>
-      )}
+ 
     </div>
   );
 }

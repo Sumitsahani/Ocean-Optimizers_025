@@ -94,7 +94,7 @@ function ProductTable({ showAdvanceSearch = false }) {
   return (
     <>
       {showAdvanceSearch === true && (
-        <div className="bg-white rounded-xl px-3 py-3 mb-3">
+        <div className="bg-white rounded px-3 py-3 mb-3">
           <div className="font-title mb-2">Advanced Search</div>
           <div className="flex w-full flex-col sm:flex-row">
             <div className="mb-2 sm:mb-0 sm:text-left text-default-color flex flex-row  font-title flex-1 px-2">
@@ -125,7 +125,7 @@ function ProductTable({ showAdvanceSearch = false }) {
         </div>
       )}
 
-      <div className="sm:bg-white rounded-xl sm:px-3 sm:py-3">
+      <div className="sm:bg-white rounded sm:px-3 sm:py-3">
         <div className="hidden sm:flex invisible sm:visible w-full flex-col sm:flex-row">
           <div className="sm:text-left text-default-color font-title flex-1">
             ProductID
@@ -189,7 +189,7 @@ function ProductTable({ showAdvanceSearch = false }) {
                     <Menu
                       menuButton={
                         <MenuButton>
-                          <div className="bg-gray-50 px-2 rounded-xl">
+                          <div className="bg-gray-50 px-2 rounded">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               className="h-6 w-6 text-blue-400"

@@ -14,7 +14,7 @@ function Button(props) {
 
   const buttonClasses = useMemo(() => {
     let defaultClasses =
-      "rounded-xl font-title text-white flex flex-row items-center justify-center";
+      "rounded font-title text-white flex flex-row items-center justify-center";
 
     if (block) {
       defaultClasses += " block w-full ";

@@ -85,7 +85,7 @@ function QuickAddProduct() {
   }, [productForm, dispatch, validForm]);
 
   const imageUploadClasses = useMemo(() => {
-    const defaultStyle = "rounded-xl ";
+    const defaultStyle = "rounded ";
 
     if (!productForm.image) {
       return defaultStyle + " border-dashed border-2 border-indigo-400 ";
@@ -110,7 +110,7 @@ function QuickAddProduct() {
   }, [productNewForm]);
 
   return (
-    <div className="bg-white rounded-xl p-4">
+    <div className="bg-white rounded p-4">
       <SectionTitle> Quick Add Product </SectionTitle>
       <div className="flex mt-2">
         {isInitLoading ? (

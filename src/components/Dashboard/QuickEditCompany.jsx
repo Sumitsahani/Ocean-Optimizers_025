@@ -72,7 +72,7 @@ function QuickEditCompany({ isShowDetail = false, alreadySet = false }) {
   }, [companyForm, dispatch, validForm]);
 
   const imageUploadClasses = useMemo(() => {
-    const defaultStyle = "rounded-xl ";
+    const defaultStyle = "rounded ";
 
     if (isTouched && !companyForm.image) {
       return defaultStyle + " border-dashed border-2 border-red-400 ";
@@ -103,7 +103,7 @@ function QuickEditCompany({ isShowDetail = false, alreadySet = false }) {
   }, [companyForm]);
 
   return (
-    <div className="bg-white rounded-xl p-4 mt-4">
+    <div className="bg-white rounded p-4 mt-4">
       <SectionTitle> Quick Edit Company </SectionTitle>
       <div className="flex mt-2">
         {isInitLoading ? (

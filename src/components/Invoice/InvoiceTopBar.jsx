@@ -14,7 +14,7 @@ function InvoiceTopBar({
   onClickBack,
 }) {
   return (
-    <div className="bg-white rounded-xl px-3 py-3">
+    <div className="bg-white rounded px-3 py-3">
       <div className="flex flex-col flex-wrap sm:flex-row justify-between">
         <div className="w-full sm:w-1/2 md:w-1/4 my-1 sm:my-1 md:my-0 px-1 flex flex-row">
           <div className="w-30 mr-3">

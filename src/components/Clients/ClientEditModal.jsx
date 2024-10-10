@@ -81,7 +81,7 @@ function ClientEditModal(props) {
   // useCallback(() => {}, [])
 
   const imageUploadClasses = useMemo(() => {
-    const defaultStyle = "rounded-xl ";
+    const defaultStyle = "rounded ";
 
     if (!clientForm.image) {
       return defaultStyle + " border-dashed border-2 border-indigo-400 ";
@@ -150,7 +150,7 @@ function ClientEditModal(props) {
                     </h3>
                     <div className="mt-2">
                       {/*  */}
-                      <div className="bg-white rounded-xl mt-4">
+                      <div className="bg-white rounded mt-4">
                         <div className="flex mt-2">
                           <ImageUpload
                             keyName="QuickEditImageUpload"

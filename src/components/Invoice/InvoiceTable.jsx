@@ -94,7 +94,7 @@ function InvoiceTable({ showAdvanceSearch = false }) {
   return (
     <>
       {showAdvanceSearch === true && (
-        <div className="bg-white rounded-xl px-3 py-3 mb-3">
+        <div className="bg-white rounded px-3 py-3 mb-3">
           <div className="font-title mb-2">Advanced Search</div>
           <div className="flex w-full flex-col sm:flex-row">
             <div className="mb-2 sm:mb-0 sm:text-left text-default-color flex flex-row font-title flex-1 px-2">
@@ -136,7 +136,7 @@ function InvoiceTable({ showAdvanceSearch = false }) {
         </div>
       )}
 
-      <div className="sm:bg-gray-50 rounded-xl sm:px-3 sm:py-3 ">
+      <div className="sm:bg-gray-50 rounded sm:px-3 sm:py-3 ">
         <div className="hidden sm:flex invisible sm:visible w-full flex-col sm:flex-row ">
           <div className="sm:text-left text-default-color font-title flex-1 hover:shadow-md bg-gray-50">
             Invoice Name
@@ -185,7 +185,7 @@ function InvoiceTable({ showAdvanceSearch = false }) {
                   <div className={defaultTdContent}>
                     <span
                       className={
-                        "whitespace-nowrap text-ellipsis overflow-hidden px-3 rounded-xl  py-1 " +
+                        "whitespace-nowrap text-ellipsis overflow-hidden px-3 rounded  py-1 " +
                         (invoice.statusIndex === "2"
                           ? "bg-red-100 text-red-400"
                           : invoice.statusIndex === "3"
@@ -221,7 +221,7 @@ function InvoiceTable({ showAdvanceSearch = false }) {
                     <Menu
                       menuButton={
                         <MenuButton>
-                          <div className="bg-gray-50 px-2 rounded-xl">
+                          <div className="bg-gray-50 px-2 rounded">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               className="h-6 w-6 text-blue-400"

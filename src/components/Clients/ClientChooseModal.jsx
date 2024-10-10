@@ -129,7 +129,7 @@ function ClientChooseModal() {
           <div className="flex justify-center min-h-full p-4 text-center">
             <div className="relative bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all my-8 flex flex-col w-full">
               <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex-1">
-                <div className="rounded-xl px-3 py-3 mb-3">
+                <div className="rounded px-3 py-3 mb-3">
                   <div className="font-title mb-2">Advanced Search</div>
                   <div className="flex w-full flex-col sm:flex-row">
                     <div className="mb-2 sm:mb-0 sm:text-left text-default-color flex flex-row font-title flex-1 sm:px-2">
@@ -208,8 +208,8 @@ function ClientChooseModal() {
                   </div>
                 </div>
 
-                <div className="sm:bg-gray-50 rounded-xl sm:px-3 sm:py-3 ">
-                  <div className="hidden sm:flex invisible sm:visible w-full flex-col sm:flex-row bg-gray-50 py-2 px-2 rounded-xl mb-1">
+                <div className="sm:bg-gray-50 rounded sm:px-3 sm:py-3 ">
+                  <div className="hidden sm:flex invisible sm:visible w-full flex-col sm:flex-row bg-gray-50 py-2 px-2 rounded mb-1">
                     <div className="sm:text-left text-default-color font-title flex-1">
                       Name
                     </div>

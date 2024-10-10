@@ -1,5 +1,5 @@
 export const defaultStyle =
-  "font-title text-md px-2 block w-full border-solid border-2 rounded-xl p-x2 focus:outline-none ";
+  "font-title text-md px-2 block w-full border-solid border-2 rounded p-x2 focus:outline-none ";
 export const defaultInputStyle = defaultStyle + "border-indigo-400 h-12 flex-1";
 export const defaultSearchStyle =
   defaultStyle + "border-gray-100 h-12 flex-1 text-sm";
@@ -23,7 +23,7 @@ export const defaultTdStyle =
 export const defaultTdActionStyle =
   "text-sm sm:text-left text-default-color font-title flex flex-row sm:w-11";
 export const defaultTdWrapperStyle =
-  "w-full flex flex-wrap flex-col sm:flex-row my-2 bg-white rounded-xl py-2 px-3 sm:px-0 sm:py-0";
+  "w-full flex flex-wrap flex-col sm:flex-row my-2 bg-white rounded py-2 px-3 sm:px-0 sm:py-0";
 export const defaultTdContent =
   "sm:w-full w-1/2 flex flex-wrap flex-row items-center";
 export const defaultTdContentTitleStyle =
